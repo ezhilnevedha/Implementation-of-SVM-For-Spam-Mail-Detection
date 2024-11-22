@@ -7,13 +7,18 @@ To write a program to implement the SVM For Spam Mail Detection.
 1. Hardware – PCs
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
-## Algorithm
-1. Import the necessary python packages using import statements.
-2. Read the given csv file using read_csv() method and print the number of contents to be displayed using df.head().
-3. Split the dataset using train_test_split.
-4. Calculate Y_Pred and accuracy.
-5. Print all the outputs.
-6. End the Program.
+### Algorithm for SMS Spam Classification
+
+1. Use libraries like pandas for data handling and sklearn for machine learning tasks.    
+2. Read the CSV file and handle encoding issues.     
+3. Check for missing values, dataset shape, and column types.     
+4. Separate the message text (v2) and label (v1) into variables.    
+5. Divide the dataset into training (80%) and testing (20%) subsets.      
+6. Transform text data into numerical format using CountVectorizer
+7. Use a Support Vector Classifier (SVC) for classification.
+8. Fit the classifier on the training data.  
+9. Generate predictions for the test set.
+10. Calculate accuracy and assess performance using metrics.   
 ## Program:
 ```python
 /*
